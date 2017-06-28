@@ -1,0 +1,4 @@
+{
+	"dbPath": "mongodb://localhost/api-file",
+	"port": 8000
+}
