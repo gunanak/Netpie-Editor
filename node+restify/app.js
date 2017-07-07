@@ -15,9 +15,15 @@ function send(req,res,next){
 	next();
 }
 
+server.get(/.*/, restify.serveStatic({
+	'directory': '..',
+	'default': 'work3.html'
+}));
+
 server.listen(8000,function(){
 	console.log('server listening on port number',server.url);
 });
+
 
 
 
